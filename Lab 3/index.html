@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Amrita CyberFest Form
+	</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<style>
+	* {
+  		box-sizing: border-box;
+		}
+
+	input[type=text], select, textarea {
+  		width: 100%;
+  		padding: 12px;
+  		border: 1px solid #ccc;
+ 		border-radius: 12px;
+  		resize: vertical;
+        }
+
+        input[type="radio"] {
+  		width: 35%;
+  		height: 1.5rem;
+  		accent-color: #a93226;
+		}
+		input[type="checkbox"] {
+			width: 50%;
+			height: 1.5rem;
+			accent-color: #a93226;
+		}
+
+		input[type=submit] {
+  			 background-color: #04AA6D;
+   			 color: white;
+   			 padding: 12px 20px;
+ 			 border: none;
+ 			 border-radius: 4px;
+ 			 cursor: pointer;
+  			 float: right;
+			 }
+
+	</style>
+</head>
+
+<body>
+	<fieldset align=left>
+		<legend><img src="amrita logo.png" width=200 height=50></legend>
+		<p align=center><font size=6 face=Audiowide>Registration Form</font></p>
+		<form>
+			<label>First Name:<span><input type=text required placeholder=First-Name></span></label>
+			<label>Last Name:<span><input type=text reqired placeholder=Last-Name></span></label>
+			<label>Category:<span><select>
+				<option value="none" selected disabled hidden>Select Category</option>
+				<option value="Student">Student</option>
+				<option value="Faculty">Faculty</option>
+				<option value="Research Scholars">Research Scholar</option>
+				<option value="Industry">Industrialist</option>
+				<option value="Others">Others</option>
+			</select></span></label>
+			<label>Mobile Number:<span><input type=text pattern="[0-9]{10}" required placeholder="Phone Number"></span></label>
+			<label>Select Gender:</label>
+			<label><span><input type=radio name="gender"></span>Male</label>
+			<label><span><input type=radio name="gender"></span>Female</label><br><br>
+			<label>Name of Institute or Company:<span><input type=text required placeholder=Institute-or-Company></span></label>
+
+			<label>Events:</label><br>
+			<label><span><input type=checkbox name="event"></span>Cyber Conclave 2022</label>
+			<label><span><input type=checkbox name="event"></span>Cyber Industry 2022</label>
+			<label><span><input type=checkbox name="event"></span>National Amrita Cyber Tech Fest 2022</label>
+			<label><span><input type=checkbox name="event"></span>Cyber Abyaan 2022</label><br>
+
+			<label>Any Previous Events Participated:<span><textarea placeholder="Write Here .." style="height=200px"></textarea></span></label><br><br>
+
+			<input type=submit value="Continue with Payment.">
+
+		</form>
+
+	</fieldset>
+</body>
+	
+</html>
